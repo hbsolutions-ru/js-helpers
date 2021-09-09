@@ -1,0 +1,32 @@
+{
+  "name": "@hbsolutions/js-helpers",
+  "version": "1.0.0",
+  "description": "Some very common JS helpers.",
+  "main": "lib/index.js",
+  "source": "src/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "build": "microbundle build --format cjs",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hbsolutions-ru/js-helpers.git"
+  },
+  "keywords": [
+    "helper",
+    "utility"
+  ],
+  "author": "HBS Development Team <dev.hbsolutions@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hbsolutions-ru/js-helpers/issues"
+  },
+  "homepage": "https://github.com/hbsolutions-ru/js-helpers#readme",
+  "devDependencies": {
+    "microbundle": "^0.13.3"
+  }
+}
