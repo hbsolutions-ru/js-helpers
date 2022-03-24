@@ -1,5 +1,22 @@
 
 /**
+ * @param date {Date}
+ * @return {number}
+ */
+export const getYearsSinceDate = date => {
+    const today = new Date();
+    let years = today.getFullYear() - date.getFullYear();
+    const months = today.getMonth() - date.getMonth();
+    if (
+        months < 0 ||
+        (months === 0 && today.getDate() < date.getDate())
+    ) {
+        years--;
+    }
+    return years;
+};
+
+/**
  * @param dateInString {string}
  * @return {Date}
  */
