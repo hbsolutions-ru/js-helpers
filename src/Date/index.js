@@ -17,6 +17,16 @@ export const getYearsSinceDate = date => {
 };
 
 /**
+ * @param date {Date}
+ * @return {Date}
+ */
+export const resetTimezone = date => {
+    return new Date(
+        date.getTime() - date.getTimezoneOffset() * 60000
+    );
+};
+
+/**
  * @param dateInString {string}
  * @return {Date}
  */
